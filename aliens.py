@@ -31,7 +31,7 @@ while run:
         if keys[pygame.K_UP] and y > 5:
             y -= speed
         if keys[pygame.K_DOWN] and y < 500 - height -15:
-            y + speed
+            y +=speed
         if keys[pygame.K_SPACE]:
             isJump = True
     else:
