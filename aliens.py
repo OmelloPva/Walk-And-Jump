@@ -29,7 +29,7 @@ while run:
     if keys[pygame.K_DOWN]:
         y += speed
 
-        
+    win.fill((0,0,0))
     pygame.draw.rect(win, (153, 0, 0,), (x, y, widht, height))
     pygame.display.update()
 
