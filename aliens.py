@@ -20,9 +20,9 @@ while run:
             run = False
 
     keys = pygame.key.get_pressed()
-    if keys[pygame.K_LEFT]:
+    if keys[pygame.K_LEFT] and x >5:
         x -= speed
-    if keys[pygame.K_RIGHT]:
+    if keys[pygame.K_RIGHT] and x < 500 - widht - 5:
         x += speed
     if keys[pygame.K_UP]:
         y -= speed
