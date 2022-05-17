@@ -36,7 +36,10 @@ while run:
             isJump = True
     else:
         if jumpCount >= -10:
-            y -= (jumpCount ** 2) / 2
+            if jumpCount < 0:
+                y += (jumpCount ** 2) / 2
+            else:
+                y -= (jumpCount ** 2) / 2
             jumpCount -= 1
         else:
             isJump = False
