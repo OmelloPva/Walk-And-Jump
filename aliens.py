@@ -11,7 +11,7 @@ widht = 40
 height = 60
 speed = 5
 
-run = true
+run = True
 while run:
     pygame.time.delay(100)
 
@@ -19,7 +19,7 @@ while run:
         if event.type == pygame.QUIT:
             run = False
         
-    pygame.draw.rect(win, (153, 0, 0,), (x, y, width, height))
+    pygame.draw.rect(win, (153, 0, 0,), (x, y, widht, height))
     pygame.display.update()
 
 pygame.quit()
